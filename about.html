@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handcrafted Delights - About</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="static/img/logo.png" alt="Handcrafted Delights Logo" width="200" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="custom.html">Custom Orders</a></li>
+            </ul>
+            <button class="cta-button" id="view-cart">View Cart</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Handcrafted Delights</h1>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Handcrafted Delights was born out of a passion for creating unique, high-quality artisanal products. Founded in 2010 by Jane and John Doe, our company has grown from a small home-based operation to a thriving business that supports local artisans and delights customers worldwide.</p>
+                <p>We believe in the power of handmade goods to bring joy and beauty into everyday life. Each item in our collection is carefully crafted with attention to detail and a commitment to sustainable practices.</p>
+                <h2>Our Mission</h2>
+                <p>At Handcrafted Delights, our mission is to:</p>
+                <ul>
+                    <li>Provide exceptional handcrafted products that inspire and delight our customers</li>
+                    <li>Support and promote the work of skilled artisans</li>
+                    <li>Encourage sustainable and eco-friendly production methods</li>
+                    <li>Foster a community that appreciates the value of handmade goods</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="inquiryForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@handcrafteddelights.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 Craft St, Artisan City, AC 12345</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/handcrafteddelights" aria-label="Facebook">Facebook</a>
+                <a href="https://www.instagram.com/handcrafteddelights" aria-label="Instagram">Instagram</a>
+                <a href="https://www.twitter.com/handcrafteddeli" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Handcrafted Delights. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-popup" class="cart-popup">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="close-cart">Close</button>
+    </div>
+
+</body></html>
